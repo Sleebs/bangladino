@@ -37,8 +37,7 @@ public class Bangladino {
 
     private void addToMagazzino(Oggetto oggetto) {
         Oggetto[] arr = new Oggetto[magazzino.length + 1];
-        for (int i = 0; i < magazzino.length; i++)
-            arr[i] = magazzino[i];
+        System.arraycopy(magazzino, 0, arr, 0, magazzino.length);
         arr[arr.length - 1] = oggetto;
         this.magazzino = arr;
 

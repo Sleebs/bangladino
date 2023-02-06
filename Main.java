@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Ciao");
@@ -6,8 +8,11 @@ public class Main {
                 new Alimentare("Cocacola", "mai", 3.0),
                 new Pulizia("Cif", 3.2)
         };
+
         Bangladino andrea = Bangladino.getInstance(arr);
+        System.out.println(Arrays.toString(andrea.magazzino));
         System.out.println(andrea.has("fonzies", 4, 0));
+        System.out.println(Arrays.toString(andrea.magazzino));
         System.out.println(andrea.has("fonzies", 4, 0));
 
     }
